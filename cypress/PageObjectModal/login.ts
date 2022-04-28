@@ -20,7 +20,8 @@ export class loginpage{
     }
 
     EnterPassword(password: string){
-    cy.get(this.LoginPage_Password).type(password)
+    cy.get(this.LoginPage_Password)
+    .type(password)
     }
 
     ClickLogin(){
